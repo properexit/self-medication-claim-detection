@@ -16,7 +16,7 @@ reproduce results.
 
 ## Setup
 
-Tested with Python 3.10+.
+Tested with Python 3.10.
 
 Create and activate a virtual environment:
 
@@ -29,6 +29,12 @@ Install dependencies:
 
 ``` bash
 pip install -r requirements.txt
+```
+
+If installation fails, ensure Python 3.10 is used:
+
+``` bash
+/opt/homebrew/bin/python3.10 -m venv venv
 ```
 
 ------------------------------------------------------------------------
