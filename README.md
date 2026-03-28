@@ -1,6 +1,6 @@
 # Claim Detection and Span Extraction in Reddit Health Discourse
 
-This project implements a lightweight pipeline for:
+This project implements a modular NLP pipeline for detecting and extracting self-medication claims from Reddit health discussions.
 
 1.  Binary claim detection\
 2.  Claim type classification (explicit vs implicit)\
@@ -33,6 +33,16 @@ pip install -r requirements.txt
 
 ------------------------------------------------------------------------
 
+## Project Structure
+
+- `src/` — core models and pipeline implementation  
+- `analysis/` — linguistic analysis and error inspection  
+- `ablation_analysis/` — input granularity experiments  
+- `benchmark_analysis/` — IBM zero-shot evaluation  
+- `experiments/` — pretrained model weights  
+
+------------------------------------------------------------------------
+
 ## Quick Test (Entry Point)
 
 Run:
@@ -55,8 +65,10 @@ Expected output (example):
       'span': 'this medication causes headaches'
     }
 
-This confirms that: - Models load correctly - Pipeline runs end-to-end -
-Span extraction works
+This confirms that:
+- Models load correctly
+- Pipeline runs end-to-end
+- Span extraction works
 
 ------------------------------------------------------------------------
 
@@ -162,11 +174,9 @@ All gold disagreements are exported for qualitative analysis.
 
 ## Training (Optional)
 
-Training scripts are provided but not required.
+Training scripts are included for completeness but are not required to reproduce the reported results, as pretrained weights are already provided.
 
-Pretrained weights are already included in:
-
-    experiments/
+Pretrained model weights are included in the repository under `experiments/`.
 
 If desired, models can be retrained with:
 

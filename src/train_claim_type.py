@@ -8,6 +8,7 @@ from tqdm import tqdm
 
 from sklearn.metrics import f1_score
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
 
 from src.datasets import ClaimTypeDataset
 from src.model import BertMiniClaimDetector
@@ -138,6 +139,14 @@ def train():
             f"Train Macro-F1: {train_f1:.4f} | "
             f"Val Macro-F1: {val_f1:.4f}"
         )
+
+        # flag : per-class breakdown         
+        print("\nValidation Classification Report:")
+        print(classification_report(
+            val_labels,
+            val_preds,
+            target_names=["implicit", "explicit"]
+        ))
 
         if val_f1 > best_val_f1:
             best_val_f1 = val_f1
