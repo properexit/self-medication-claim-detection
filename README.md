@@ -41,11 +41,11 @@ If installation fails, ensure Python 3.10 is used:
 
 ## Project Structure
 
-- `src/` — core models and pipeline implementation  
-- `analysis/` — linguistic analysis and error inspection  
-- `ablation_analysis/` — input granularity experiments  
-- `benchmark_analysis/` — IBM zero-shot evaluation  
-- `experiments/` — pretrained model weights  
+- `src/` - core models and pipeline implementation  
+- `analysis/` - linguistic analysis and error inspection  
+- `ablation_analysis/` - input granularity experiments  
+- `benchmark_analysis/` - IBM zero-shot evaluation  
+- `experiments/` - pretrained model weights  
 
 ------------------------------------------------------------------------
 
