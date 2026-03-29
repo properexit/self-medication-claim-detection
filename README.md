@@ -2,8 +2,8 @@
 
 This project implements a modular NLP pipeline for detecting and extracting self-medication claims from Reddit health discussions.
 
-1.  Binary claim detection\
-2.  Claim type classification (explicit vs implicit)\
+1.  Binary claim detection
+2.  Claim type classification (explicit vs implicit)
 3.  Claim span extraction (BIO tagging)
 
 The system is trained on Reddit health data and evaluated zero-shot on
